@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+.live-box {
+  font-family: "Inter", sans-serif;
+  padding: 1.5rem 1rem;
+  width: 50rem;
+  height: 20rem;
+  background: rgb(63, 94, 251, 1);
+  background: linear-gradient(
+    147deg,
+    rgba(63, 94, 251, 0.3) 0%,
+    rgba(252, 70, 107, 0.3) 100%
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: jump 0.2s ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    width: 50rem;
+    height: 20rem;
+  }
+  20% {
+    width: 48rem;
+    height: 19rem;
+  }
+  100% {
+    width: 50rem;
+    height: 20rem;
+  }
+}
+
+.live-box h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.live-box p {
+  font-size: 1.5rem;
+  margin: 0rem;
+}
+
+.get-started {
+  font-size: 2rem;
+  margin: 4rem 0 2rem 0;
+  border: none;
+  background-color: black;
+  color: var(--primary-color);
+  padding: 0.3rem 1.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.explosion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}

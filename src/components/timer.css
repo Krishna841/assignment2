@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+.timer-container {
+  font-family: "Inter", sans-serif;
+  padding: 1.5rem 1rem;
+  width: 30rem;
+  background: rgb(63, 94, 251, 1);
+  background: linear-gradient(
+    147deg,
+    rgba(63, 94, 251, 0.3) 0%,
+    rgba(252, 70, 107, 0.3) 100%
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 7rem;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.unit {
+    font-size: 2rem;
+}
